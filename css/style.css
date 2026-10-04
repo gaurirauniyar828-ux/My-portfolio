@@ -13,7 +13,7 @@ ul {
 }
 
 ul li {
-  background-color: #f4f4f9;
+  background-color: #3f3f95;
   padding: 10px 15px;
   margin-bottom: 8px;
   border-left: 4px solid #6b2d5c; 
@@ -25,7 +25,7 @@ ul li {
 /* section 2 - header and navigation */
 header{
    background-color: #6b2d5c;
-  border-bottom: 2px solid #e0e0e0;
+  border-bottom: 2px solid #b6a5a5;
     color: rgb(128, 61, 61);
 }
 
@@ -44,7 +44,8 @@ nav ul{
 }
 nav a{
     text-decoration: none;
-    color: rgb(7, 6, 6);
+    color: rgb(51, 15, 15);
+    text-color: rgb(51, 15, 15);
 
 }
 
