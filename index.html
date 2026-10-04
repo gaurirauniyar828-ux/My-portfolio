@@ -60,7 +60,7 @@
                 <h1>My Education</h1>
 
                 <div class="education-info">
-                <table border="1">
+                <table>
                     <thead>
                         <tr> 
                             <th>S.N</th>
@@ -140,43 +140,59 @@
         </div>
         </section>
 
-        <section id="skills">
-            <div class="skills-container">
-        <h1>My skills</h1>
-        <dl> 
-            <dt>Programming Language </dt>
-            <dd>Python, JavaScript, Java</dd>
+       <section id="skills">
+  <div class="skills-container">
+    <h1>My Skills</h1>
+    
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Programming Language</h3>
+        <p>Python, JavaScript, Java</p>
+      </div>
 
-             <dt>Database</dt>
-            <dd>MySql, Oracle, MongoDB, Postgres </dd>
+      <div class="skill-card">
+        <h3>Database</h3>
+        <p>MySQL, Oracle, MongoDB, Postgres</p>
+      </div>
 
-             <dt>Tools </dt>
-            <dd> VSCode, Ms Word, Ms Excel, PowerPoint</dd>
+      <div class="skill-card">
+        <h3>Tools</h3>
+        <p>VSCode, MS Word, MS Excel, PowerPoint</p>
+      </div>
 
-             <dt> Frameworks </dt>
-            <dd>Sspringboot, Angular, Django, dot net </dd>
-        </dl>
-        </div>
-        </section>
+      <div class="skill-card">
+        <h3>Frameworks</h3>
+        <p>Spring Boot, Angular, Django, .NET</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <section id="contact">
-            <div class="contact-container">
-        <h1>Contact Me </h1>
-        <h2>Contact Form</h2>
-        <form>
-            <label>Name</label>
-                <input type="text" placeholder="Type your name"><br> <br>
+        <<section id="contact">
+  <div class="contact-container">
+    <h1>Contact Me</h1>
+    <h2>Contact Form</h2>
+    
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Type your name">
+      </div>
 
-            <label>Email</label> <br> <br>
-                <input type="email" placeholder="Type your email"><br> <br>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Type your email">
+      </div>
 
-            <label>Message</label> <br> <br>
-                <textarea placeholder="Type your message"></textarea><br> <br>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" placeholder="Type your message"></textarea>
+      </div>
 
-            <button type="submit">Submit</button>
-        </form>
-        </div>
-        </section>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</section>
 
         </main>
         <footer>
