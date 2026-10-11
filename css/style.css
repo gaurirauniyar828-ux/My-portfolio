@@ -45,7 +45,6 @@ nav ul{
 nav a{
     text-decoration: none;
     color: rgb(51, 15, 15);
-    text-color: rgb(51, 15, 15);
 
 }
 
@@ -81,12 +80,13 @@ main{
 .projects-container,
 .skills-container,
 .contact-container,
-.education-container{
-     
+.education-container,
+.gallery-container{
     background-color: white;
     border-radius: 10px;
     padding: 2rem;
     margin-bottom: 2rem;
+    margin-top: 2rem;
     box-shadow: 0 4px 12px rgb(245, 244, 244);
 
 }
@@ -301,6 +301,98 @@ footer p {
 }
 
 
+
+/* Gallery section */
+
+.gallery-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    box-shadow: 0 4px 12px rgb(245, 244, 244);
+}
+
+/* Image slider */
+
+.slider {
+    position: relative;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.4s ease;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    height: 400px;
+    display: block;
+    object-fit: contain;
+    background-color: #f4f4f9;
+}
+
+/* Previous and next buttons */
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.slider-btn.prev {
+    left: 10px;
+}
+
+.slider-btn.next {
+    right: 10px;
+}
+
+.slider-btn:hover {
+    background-color: #6b2d5c;
+}
+
+/* Slider dots */
+
+.slider-dots {
+    text-align: center;
+    padding: 12px 0;
+}
+
+.dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #6b2d5c;
+}
+
+
+
+
 /* responsiveness */
 @media (max-width: 768px){
 .header-container{
@@ -312,6 +404,13 @@ nav ul{
 .about-container{
     flex-direction: column;
 }
+.gallery-container {
+        padding: 1rem;
+    }
+
+    .slide img {
+        height: 250px;
+    }
 }
 
 
